@@ -27,4 +27,22 @@ $(function(){
         arrows:true
     })
 
+
+    //section4  슬릭
+
+    $(".s4_left_move").slick({
+        autoplay:true,
+        autoplaySpeed:2000,
+        dots:true,
+        arrows:false,
+        slidesToScroll:2
+    })
+
+    //sns 탭 메뉴
+
+    $(".section5_inner ul li").click(function(e){
+        e.preventDefault();    //위로 안올라감
+        $(".section5_inner ul li").toggleClass("on")
+    })
+
 })
